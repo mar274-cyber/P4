@@ -1,0 +1,240 @@
+/* DEVELOPER: Matthew Romano, IS117-005, Fall 2025 */
+
+/* GENERAL LAYOUT */
+body {
+    padding-bottom: 60px;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer */
+.footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* TOP NAME SECTION */
+.top-name-section {
+    padding: 25px 0;
+}
+
+.top-name-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* NAVIGATION */
+
+.custom-nav-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.custom-nav-wrapper .container {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Full nav items (desktop) */
+.custom-nav .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+    border-right: 3px solid black;
+}
+
+.custom-nav .nav-item:last-child {
+    border-right: none;
+}
+
+.custom-nav .nav-link {
+    color: black !important;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.custom-nav .nav-link:hover {
+    background-color: #eaeaea;
+    color: #000 !important;
+}
+
+/* Active page */
+.active-link {
+    background-color: #dcdcdc;
+    text-decoration: underline;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    border-radius: 0;
+    border: 2px solid black;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .navbar-toggler {
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .custom-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        border: none;
+    }
+
+    .navbar-collapse.show .custom-nav {
+        display: flex !important;
+    }
+
+    .custom-nav .nav-item {
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding: 12px 0;
+    }
+
+    .custom-nav .nav-item:last-child {
+        border-bottom: none;
+    }
+}
+
+/* DESKTOP*/
+@media (min-width: 769px) {
+
+    /* Hide hamburger */
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    /* Show full nav */
+    .custom-nav {
+        display: flex !important;
+        flex-direction: row;
+    }
+}
+
+/* JUMBOTRON */
+.custom-jumbotron {
+    background-color: #0d6efd;
+    color: white;
+    padding: 60px 0;
+}
+
+.custom-jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.custom-jumbotron p {
+    font-size: 1.3rem;
+}
+
+/* ABOUT PAGE */
+.about-container {
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+.section-title {
+    color: black;
+    font-weight: 700;
+}
+
+/* IMAGES */
+.cert-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-fluid.shadow {
+    border-radius: 10px;
+}
+
+/* PROJECT CARDS */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+
+/* FORMS */
+form label {
+    font-weight: 600;
+}
+
+button.btn-primary {
+    font-weight: 600;
+}
+.navbar-toggler-icon {
+    background-image: none !important; /* Remove Bootstrap default */
+    width: 28px;
+    height: 3px;
+    background-color: transparent;
+    position: relative;
+}
+
+/* Three bars */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+
+    background-color: black;
+}
+
+.navbar-toggler-icon::before {
+    bottom: 8px;
+}
+
+/* Middle bar */
+.navbar-toggler-icon span {
+    top: 0;
+}
+
+/* Bottom bar */
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+/* Move hamburger icon to the LEFT on mobile */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start !important; /* aligns everything to the left */
+    }
+
+    .navbar-toggler {
+        margin-left: 0 !important;   /* keeps it at left edge */
+        margin-right: auto !important; /* pushes rest of navbar away */
+    }
+}

@@ -1,0 +1,105 @@
+<!-- DEVELOPER: Matthew Romano, IS117-005, Fall 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Matthew Romano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP NAME SECTION -->
+<div class="top-name-section text-center">
+    <h1>Matthew Romano</h1>
+</div>
+
+<!-- FULL-WIDTH NAVIGATION BAR -->
+<div class="custom-nav-wrapper">
+<nav class="navbar navbar-expand-md container p-0">
+
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"><span></span></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+
+        <ul class="nav justify-content-center text-center custom-nav w-100">
+
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="about.html">About Me</a>
+            </li>
+
+            <li class="nav-item dropdown flex-fill">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                    Projects
+                </a>
+
+                <ul class="dropdown-menu text-center w-100">
+                    <li><a class="dropdown-item" href="school-projects.html">School Projects</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="certifications.html">Certifications</a>
+            </li>
+
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+</div>
+
+<!-- CONTACT PAGE CONTENT -->
+<div class="container my-5">
+    <h1>Contact Me</h1>
+    <p>Fill out the form below to get in touch.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <form>
+                <div class="mb-3">
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container text-center">
+        &copy; Matthew Romano, 2025 | Terms Of Use | Privacy Statement
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
